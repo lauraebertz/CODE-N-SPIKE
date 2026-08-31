@@ -711,7 +711,7 @@ class DialogoLucas extends DialogoBase {
             },
             {
                 nome: 'Professor Lucas',
-                texto: `${nome1} (Jogador 1): mova-se com [A] e [D], pule com [W] e mergulhe com [S]. Use [Q] para defender/levantar e [E] para sacar/atacar/bloquear!`
+                texto: `${nome1} (Jogador 1): mova-se com [A] e [D], pule com [W] e mergulhe com [S]. Use [G] para defender/levantar e [H] para sacar/atacar/bloquear!`
             },
             {
                 nome: 'Professor Lucas',
