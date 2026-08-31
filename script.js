@@ -711,7 +711,7 @@ class DialogoLucas extends DialogoBase {
             },
             {
                 nome: 'Professor Lucas',
-                texto: `${nome1} (Jogador 1): mova-se com [A] e [D], pule com [W] e mergulhe com [S]. Use [Q] para defender/levantar e [E] para sacar/atacar/bloquear!`
+                texto: `${nome1} (Jogador 1): mova-se com [A] e [D], pule com [W] e mergulhe com [S]. Use [G] para defender/levantar e [H] para sacar/atacar/bloquear!`
             },
             {
                 nome: 'Professor Lucas',
@@ -983,8 +983,8 @@ class GamePlay extends Phaser.Scene {
             left: Phaser.Input.Keyboard.KeyCodes.A,
             down: Phaser.Input.Keyboard.KeyCodes.S,
             right: Phaser.Input.Keyboard.KeyCodes.D,
-            atacar: Phaser.Input.Keyboard.KeyCodes.E,
-            defender: Phaser.Input.Keyboard.KeyCodes.Q
+            atacar: Phaser.Input.Keyboard.KeyCodes.H,
+            defender: Phaser.Input.Keyboard.KeyCodes.G
         });
 
         this.keysP2 = this.input.keyboard.addKeys({
