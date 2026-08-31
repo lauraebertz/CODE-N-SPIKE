@@ -711,7 +711,7 @@ class DialogoLucas extends DialogoBase {
             },
             {
                 nome: 'Professor Lucas',
-                texto: `${nome1} (Jogador 1): mova-se com [A] e [D], pule com [W] e mergulhe com [S]. Use [G] para defender/levantar e [H] para sacar/atacar/bloquear!`
+                texto: `${nome1} (Jogador 1): mova-se com [A] e [D], pule com [W] e mergulhe com [S]. Use [Q] para defender/levantar e [E] para sacar/atacar/bloquear!`
             },
             {
                 nome: 'Professor Lucas',
@@ -993,15 +993,17 @@ class GamePlay extends Phaser.Scene {
             esc: Phaser.Input.Keyboard.KeyCodes.ESC
         });
 
-        this.input.keyboard.on('keydown-E', () => {
+        this.input.keyboard.on('keydown-H', () => {
             if (this.minigame.ativo && this.minigame.jogadorAlvo === this.p1) {
                 this.processarSaque();
             } else if (!this.tentarBloqueio(this.p1)) {
                 this.processarToqueAtaque(this.p1);
             }
         });
-
-        this.input.keyboard.on('keydown-Q', () => this.processarToqueDefesaLevantamento(this.p1));
+        
+        this.input.keyboard.on('keydown-G', () => {
+            this.processarToqueDefesaLevantamento(this.p1);
+        });
         this.input.keyboard.on('keydown-S', () => this.tentarPeixinho(this.p1));
 
         this.input.keyboard.on('keydown-ENTER', () => {
